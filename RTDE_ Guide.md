@@ -55,7 +55,7 @@ RTDE client Python module
 
  
 
-Introduction
+**Introduction**
 
 The Real-Time Data Exchange (RTDE) interface provides a way to synchronize external applications with the UR controller over a standard TCP/IP connection, without breaking any real-time properties of the UR controller. This functionality is among others useful for interacting with fieldbus drivers (e.g. Ethernet/IP), manipulating robot I/O and plotting robot status (e.g. robot trajectories). The RTDE interface is by default available when the UR controller is running.
 
@@ -77,7 +77,7 @@ To get started we recommend using or modify the provided client sample written i
 
 git clone https://github.com/UniversalRobots/RTDE_Python_Client_Library.git
 
-Key features
+**Key features**
 
 Real-time synchronization: The RTDE generally generates output messages on 125 Hz. However, the real-time loop in the controller has a higher priority than the RTDE interface. Therefore, if the controller lacks computational resources it will skip a number of output packages. The skipped packages will not be sent later, the controller will always send the most recent data. Input packages will always be processed in the control cycle they are received, so the load for the controller will vary depending on the number of received packages.
 
@@ -1309,4 +1309,4 @@ variable names
 
 string
 
-Summary: Setup the outputs recipe. At the moment the CON only supports one output recipe and the output frequency is configurable. For CB-Series robots the frequency must be between 1 and 125 Hz and the output rate will be according to floor (125 / frequency), while for e-Series robots the frequency can go up to 500 Hz. The package should contain all desired output variables. The variable names is a list of comma separated variable name strings.
+**Summary**: Setup the outputs recipe. At the moment the CON only supports one output recipe and the output frequency is configurable. For CB-Series robots the frequency must be between 1 and 125 Hz and the output rate will be according to floor (125 / frequency), while for e-Series robots the frequency can go up to 500 Hz. The package should contain all desired output variables. The variable names is a list of comma separated variable name strings.
