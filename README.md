@@ -1,5 +1,5 @@
 # Robot-Tinkering
-Opensource workflows to communicate with KUKA (KRC2/4) and Universal Robots in realtime through grasshopper. The workflows have been developed at Institute of Advanced Architecture for Catalonia (IAAC) in Barcelona and enhanced for specific use case by Nijat in ETH Zurich.
+Opensource workflows to communicate with KUKA (KRC2/4) and Universal Robots in realtime through grasshopper. The workflows have been developed at Institute of Advanced Architecture for Catalonia (IAAC) in Barcelona and enhanced for specific use case by Nijat Mahamaliyev at ETH Zurich.
 
 
 
